@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teks Berjalan Besar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .teks-berjalan {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .teks-berjalan h1 {
+            color: white;
+            font-size: 80px;
+            font-weight: bold;
+            white-space: nowrap;
+            animation: berjalan 10s linear infinite;
+        }
+
+        @keyframes berjalan {
+            from {
+                transform: translateX(100vw);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="teks-berjalan">
+        <h1>MAAF SEDANG DI RENOVASI</h1>
+    </div>
+
+</body>
+</html>
